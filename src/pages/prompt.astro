@@ -1,6 +1,12 @@
 ---
+import { supabase } from "../supabase";
+
+let { data: count, error } = await supabase.from("count").select("number");
+
 const formData = await Astro.request.formData();
 const prompt = formData.get("prompt")?.toString();
+console.log(count[0].number);
 ---
 
 <div>{prompt}</div>
+<div>{count[0].number}</div>

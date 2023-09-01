@@ -11,12 +11,17 @@
     <title>Astro</title>
     <script src="/htmx.js" is:inline></script>
   </head>
-  <body>
+  <body class="p-4">
     <h1>Astro</h1>
     <form hx-post="/prompt" hx-target="#result">
       <div>A funnny story about a</div>
-      <input type="text" name="prompt" placeholder="Prompt" />
-      <button type="submit">Submit</button>
+      <input
+        class="border rounded-sm border-black"
+        type="text"
+        name="prompt"
+        placeholder="Prompt"
+      />
+      <button class="bg-blue-200" type="submit">Submit</button>
     </form>
     <div id="result"></div>
   </body>
