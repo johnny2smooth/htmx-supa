@@ -15,7 +15,7 @@
         animation-name: dash;
         animation-fill-mode: forwards;
         animation-timing-function: linear;
-        animation-duration: 50s;
+        animation-duration: 20s;
         animation-iteration-count: infinite;
       }
 
